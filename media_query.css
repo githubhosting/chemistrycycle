@@ -19,7 +19,7 @@
   .call_btn {
     margin-top: 50px;
     margin-right: 0px;
-    margin-bottom: auto;
+    margin-bottom: 20px;
     margin-left: 0px;
     position: relative;
     display: inline-block;
@@ -46,6 +46,23 @@
     z-index: -2;
     transition: all 0.3s ease-in-out;
   }
+  .quote {
+    /* margin-top: 2rem;
+    margin-bottom: 1rem; */
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 520;
+    margin-top: 5rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    box-shadow: var(--shadow-white-3);
+    /* position: relative; */
+  }
+  .header .countdown h2 {
+    padding-top: 1rem;
+    font-size: 2rem;
+  }
 }
 
 /* For large Screen */
@@ -57,15 +74,27 @@
   .call_btn {
     margin-top: 80px;
     margin-right: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-left: 0px;
     position: relative;
     display: inline-block;
     z-index: 99;
   }
-  
+  .header .countdown h2 {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+  }
+  .quote {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 520;
+    margin-top: 14rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    box-shadow: var(--shadow-white-3);
+  }
 }
-
 
 /* One Plus */
 @media only screen and (max-width: 425px) {
@@ -88,6 +117,6 @@
   }
 
   .call_btn {
-    margin:  4rem 0rem 4rem 0rem;
+    margin: 4rem 0rem 4rem 0rem;
   }
 }
