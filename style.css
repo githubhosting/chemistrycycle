@@ -96,8 +96,15 @@ html {
 }
 
 body {
-  /* background: hsl(206, 23%, 94%); */
-  background: hsl(215, 46%, 93%);
+  background: hsl(206, 23%, 94%);
+
+  /* background: hsl(215, 46%, 93%); */
+
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("https://github.com/bhupenderhere/to-do-list-web-application/blob/main/images/body__background.png?raw=true");
+  background-size: cover; */
+
   font-family: "Montserrat", sans-serif;
   width: 100%;
   min-height: 100vh;
@@ -129,7 +136,7 @@ body {
   box-shadow: var(--shadow-white-3);
   /* background: var(--gradient-box-w); */
   background: linear-gradient(0deg, #f9fbfc 3.36%, #e2eaf5 95.69%);
-  border-radius: 25px;
+  border-radius: 14px;
   text-align: center;
 }
 
@@ -332,29 +339,41 @@ body {
   text-align: center;
   font-size: 0.9rem;
   font-weight: 520;
-  /* margin-top: 2rem; */
   margin-top: 14rem;
   text-decoration: none;
-  border-radius: 1rem;
+  border-radius: 14px;
   padding: 0.5rem;
   /* box-shadow: var(--shadow-white-3); */
   box-shadow: -10px -10px 30px 0 #fff, 10px 10px 30px 0 #1d0dca17;
-
   /* position: relative; */
 }
+.quotetop {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 520;
+  margin-top: 2rem;
+  text-decoration: none;
+  border-radius: 14px;
+  padding: 0.5rem;
+  /* box-shadow: var(--shadow-white-3); */
+  box-shadow: -10px -10px 30px 0 #fff, 10px 10px 30px 0 #1d0dca17;
+  /* position: relative; */
+}
+
 .quote a {
   text-decoration: none;
 }
 .notice p {
   font-size: 0.8rem;
   text-align: left;
-  border-radius: 1rem;
+  border-radius: 14px;
   padding: 0.6rem;
   /* box-shadow: -10px -10px 30px 0 #fff, 10px 10px 30px 0 #1d0dca17; */
 
   box-shadow: var(--shadow-white-3);
 }
 .notice h3 {
+  margin-top: 1rem;
   text-align: left;
   padding: 0.5rem;
 }
@@ -416,11 +435,11 @@ button:after {
   padding: 0.6rem 1rem;
   font-size: 18px;
   text-align: center;
-  border-radius: 16px;
+  border-radius: 14px;
   box-shadow: var(--shadow-white-3);
-  background: linear-gradient(-45deg, #338aff, #3cf0c5);
-  /* background: linear-gradient(-60deg, #004e92,  #338aff, #185a9d); */
-  background-size: 300%;
+  /* background: linear-gradient(-45deg, #338aff, #3cf0c5); */
+  background: linear-gradient(-60deg, #004e92, #338aff, #185a9d);
+  background-size: 200%;
   -webkit-animation: anime 6s linear infinite;
   animation: anime 6s linear infinite;
 }
@@ -434,7 +453,8 @@ button:after {
 }
 a:hover {
   text-decoration: none;
-  color: #002a8f;
+  color: #000;
+  /* color: #002a8f; */
 }
 @-webkit-keyframes anime {
   0% {
@@ -589,6 +609,9 @@ a:hover {
   .button-67 {
     padding: 24px;
   }
+  .btn-16 {
+    padding: 24px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -602,4 +625,53 @@ a:hover {
     display: inline-block;
     z-index: 99;
   }
+}
+
+/* 16 */
+.btn-16 {
+  border: none;
+  color: #000;
+}
+.btn-16:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.btn-16:hover {
+  color: #000;
+}
+.btn-16:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.btn-16:active {
+  top: 2px;
+}
+.custom-btn {
+  /* width: 130px; */
+  width: max-content;
+  height: 40px;
+  /* color: #fff; */
+  color: #2a1f62;
+  border-radius: 14px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
 }

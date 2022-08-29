@@ -41,7 +41,7 @@ function change1() {
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
   origin: "top",
-  distance: "70px",
+  distance: "80px",
   duration: 950,
   reset: true,
 });
@@ -49,7 +49,7 @@ const sr = ScrollReveal({
 sr.reveal(".container", { delay: 50 });
 sr.reveal(".btn", { distance: "15px", delay: 50, interval: 80 });
 
-sr.reveal(".card", { distance: "10px", delay: 60, interval: 80, reset: false });
+sr.reveal(".card", { distance: "10px", delay: 60, interval: 90, reset: false });
 sr.reveal(".quote", { distance: "10px", delay: 100 });
 
 sr.reveal(".button-67", { distance: "10px", delay: 100 });
